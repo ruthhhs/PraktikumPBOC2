@@ -13,3 +13,8 @@ javac -d bin .\src\{file-name}.java
 ```
 java -cp bin {file-name}
 ```
+
+## Folder Structure
+
+- TestIntro : test java and git
+- Pertemuan1 : test OOP with class `Titik` and `MTitik`
