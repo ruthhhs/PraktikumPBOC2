@@ -20,4 +20,4 @@ java -cp bin {file-name}
 
 - TestIntro : test java, git, and github
 - Pertemuan1 : test OOP with class `Titik` and `MTitik`
-- Pertemuan2 : class and object
+- Pertemuan2 : class and object with class `Garis` and `MGaris`
