@@ -7,7 +7,6 @@ public class Titik {
     // ====== ATRIBUT ======
     double absis;
     double ordinat;
-    int ukuran;
     static int counterTitik = 0;
 
     // ====== METHOD KONSTRUKTOR ======
