@@ -19,5 +19,6 @@ java -cp bin {file-name}
 ## Folder Structure
 
 - TestIntro : test java, git, and github
-- Pertemuan1 : test OOP with class `Titik` and `MTitik`
-- Pertemuan2 : class and object with class `Garis` and `MGaris`
+- Pertemuan1 : test OOP with class `Titik`
+- Pertemuan2 : package and visibility with class `Titik` and `Garis`
+- Pertemuan3 : asosiation, agregation, and composition with class `Mahasiswa`, `Dosen`, `MataKuliah`, and `Kendaraan`
