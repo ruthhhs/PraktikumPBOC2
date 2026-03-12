@@ -22,3 +22,5 @@ java -cp bin {file-name}
 - Pertemuan1 : test OOP with class `Titik`
 - Pertemuan2 : package and visibility with class `Titik` and `Garis`
 - Pertemuan3 : asosiation, agregation, and composition with class `Mahasiswa`, `Dosen`, `MataKuliah`, and `Kendaraan`
+- Pertemuan4 : inheritance with class `BangunDatar`, `Persegi`, and `Lingkaran`
+- Pertemuan4-2 : assigment of inheritance with class `Pegawai`, `Dosen`, `DosenTetap`, `DosenTamu`, and `Tendik`
