@@ -5,10 +5,9 @@ public class Pegawai {
     private Tanggal tanggalLahir;
     private Tanggal mulaiKerja;
     private String jabatan;
-    private String masaKerja;
-    private Tanggal pensiun;
     private Integer gajiPokok;
-    private Integer tunjangan;
+    private Double tunjangan;
+    private Double persenTunjang;
     private Integer bup;
 
     // ====== METHOD KONSTRUKTOR ======
@@ -18,10 +17,9 @@ public class Pegawai {
         Tanggal tanggalLahir,
         Tanggal mulaiKerja,
         String jabatan,
-        // String masaKerja,
-        // Tanggal pensiun,
         Integer gajiPokok,
-        Integer persenTunjang,
+        Integer bup,
+        Double persenTunjang,
         Tanggal hariIni
     ) {
             this.nip = nip;
@@ -29,61 +27,61 @@ public class Pegawai {
             this.tanggalLahir = tanggalLahir;
             this.mulaiKerja = mulaiKerja;
             this.jabatan = jabatan;
-            this.masaKerja = setMasaKerja();
-            this.pensiun = setPensiun();
             this.gajiPokok = gajiPokok;
-            this.tunjangan = setTunjangan(persenTunjang);
+            this.bup = bup;
+            this.persenTunjang = persenTunjang;
+            hitungTunjangan(hariIni);
         }
 
-    // public Pegawai() {
-    //     this(
-    //         "-",
-    //         "-",
-    //         new Tanggal(),
-    //         new Tanggal(),
-    //         "-",
-    //         "-",
-    //         new Tanggal(),
-    //         0,
-    //         0
-    //     );
-    // }
+    public Pegawai() {
+        this(
+            "-",
+            "-",
+            new Tanggal(1, 1, 2000),
+            new Tanggal(1, 1, 2020),
+            "-",
+            3700000, // umr semarang wkwkw
+            70,
+            0.0,
+            new Tanggal()
+        );
+    }
 
     // ====== METHOD SELEKTOR ======
     public String getNip() {
-        return this.nip;
+        return nip;
     }
 
     public String getNama() {
-        return this.nama;
+        return nama;
     }
 
     public Tanggal getTanggalLahir() {
-        return this.tanggalLahir;
+        return tanggalLahir;
     }
 
     public Tanggal getMulaiKerja() {
-        return this.mulaiKerja;
+        return mulaiKerja;
     }
 
     public String getJabatan() {
-        return this.jabatan;
-    }
-
-    public String getMasaKerja() {
-        return this.masaKerja;
-    }
-
-    public Tanggal getPensiun() {
-        return this.pensiun;
+        return jabatan;
     }
 
     public Integer getGajiPokok() {
-        return this.gajiPokok;
+        return gajiPokok;
     }
 
-    public Integer getTunjangan() {
-        return this.tunjangan;
+    public Double getTunjangan() {
+        return tunjangan;
+    }
+
+    public Double getPersenTunjang() {
+        return persenTunjang;
+    }
+
+    public Integer getBup() {
+        return bup;
     }
 
     // ====== METHOD MUTATOR  ======
@@ -107,38 +105,46 @@ public class Pegawai {
         this.jabatan = jabatan;
     }
 
-    public void setMasaKerja (Tanggal mulaiKerja, Tanggal hariIni){
-        this.masaKerja = (
-            (hariIni.getTahun() - mulaiKerja.getTahun()) +
-            " tahun " +
-            (hariIni.getBulan() - mulaiKerja.getBulan()) +
-            " bulan "
-        );
-    }
-
-    public void setPensiun (Tanggal pensiun){
-        pensiun.setBulan(pensiun.getBulan() + 1);
-        pensiun.setTahun(pensiun.getTahun() + bup);;
-    }
-
     public void setGajiPokok (Integer gajiPokok){
         this.gajiPokok = gajiPokok;
     }
 
-    public void setTunjangan (Integer persenTunjang, Tanggal hariIni){
-        this.tunjangan = (
-            persenTunjang *
-            (hariIni.getTahun() - mulaiKerja.getTahun()) * // masa kerja dalam tahun
-            this.gajiPokok
-        );
+    public void setPersenTunjang (Double persenTunjang) {
+        this.persenTunjang = persenTunjang;
     }
 
-    public Integer getBup() {
-        return this.bup;
+    public void setBup(Integer bup) {
+        this.bup = bup;
+    }
+
+    // ====== METHOD HITUNG ======
+    public String hitungMasaKerja (Tanggal hariIni){
+        int tahun = hariIni.getTahun() - mulaiKerja.getTahun();
+        int bulan = hariIni.getBulan() - mulaiKerja.getBulan();
+        return tahun + " tahun " + bulan + " bulan";
+    }
+
+    public Tanggal hitungPensiun(){
+        Tanggal pensiun = new Tanggal(
+            tanggalLahir.getHari(),
+            tanggalLahir.getBulan(),
+            tanggalLahir.getTahun() + bup
+        );
+        return pensiun;
+    }
+
+    public void hitungTunjangan(Tanggal hariIni){
+        int masaKerja = hariIni.getTahun() - mulaiKerja.getTahun();
+        this.tunjangan = (persenTunjang *
+                            masaKerja *
+                            gajiPokok / 100);
     }
 
     // ====== METHOD LAINNYA ======
-    public void printInfo() {
+    public void printInfo(Tanggal hariIni) {
+        if (jabatan == "-") {
+            System.out.println("\n===== Data Pegawai =====");
+        }
         System.out.println("NIP           : " + nip);
         System.out.println("Nama          : " + nama);
         System.out.print("Tanggal Lahir : ");
@@ -146,10 +152,11 @@ public class Pegawai {
         System.out.print("Mulai Kerja   : ");
         mulaiKerja.printTanggal();
         System.out.println("Jabatan       : " + jabatan);
-        System.out.println("Masa Kerja    : " + masaKerja);
+        System.out.println("Masa Kerja    : " + hitungMasaKerja(hariIni));
         System.out.print("Pensiun       : ");
-        pensiun.printTanggal();
-        System.out.println("Gaji Pokok    : Rp " + gajiPokok);
+        hitungPensiun().printTanggal();
+        System.out.println("Gaji Pokok    : Rp " + gajiPokok + ".0");
+        hitungTunjangan(hariIni);
         System.out.println("Tunjangan     : Rp " + tunjangan);
     }
 }
