@@ -1,5 +1,7 @@
-public class Tendik extends Pegawai{
+public class DosenTetap extends Pegawai{
     // ====== ATRIBUT ======
+    private String nidn;
+    private String fakultas;
 
     // ====== METHOD KONSTRUKTOR ======
 

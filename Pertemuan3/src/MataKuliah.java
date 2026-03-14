@@ -42,7 +42,7 @@ public class MataKuliah {
         this.nama = nama;
     }
 
-    void setProdi(Integer sks){
+    void setSks(Integer sks){
         this.sks = sks;
     }
 }
