@@ -1,7 +1,13 @@
+// Nama File    : DosenTamu.java
+// Deskripsi    : Berisi atribut dan method dalam class DosenTamu
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 12 Maret 2026
+
 public class DosenTamu extends Pegawai{
     // ====== ATRIBUT ======
     private String nidk;
     private String fakultas;
+    private Tanggal akhirKontrak;
 
     // ====== METHOD KONSTRUKTOR ======
     public DosenTamu() {
@@ -10,11 +16,13 @@ public class DosenTamu extends Pegawai{
         setBup(55);
         this.nidk = "-";
         this.fakultas = "-";
+        this.akhirKontrak = new Tanggal(1, 1, 2022);
     }
 
     public DosenTamu(
         String nidk,
         String fakultas,
+        Tanggal akhirKontrak,
         String nip,
         String nama,
         Tanggal tanggalLahir,
@@ -38,6 +46,7 @@ public class DosenTamu extends Pegawai{
         );
         this.nidk = "-";
         this.fakultas = "-";
+        this.akhirKontrak = akhirKontrak;
     }
 
     // ====== METHOD SELEKTOR ======
@@ -49,6 +58,10 @@ public class DosenTamu extends Pegawai{
         return fakultas;
     }
 
+    public Tanggal getAkhirKontrak() {
+        return akhirKontrak;
+    }
+
     // ====== METHOD MUTATOR  ======
     public void setNidk(String nidk) {
         this.nidk = nidk;
@@ -58,11 +71,24 @@ public class DosenTamu extends Pegawai{
         this.fakultas = fakultas;
     }
 
+    public void setAkhirKontrak(Tanggal akhirKontrak) {
+        this.akhirKontrak = akhirKontrak;
+    }
+
+    // ====== METHOD HITUNG ======
+    // overide
+    public void hitungTunjangan(Tanggal hariIni){
+        setTunjangan(getPersenTunjang() *
+                        getGajiPokok() / 100);
+    }
+
     // ====== METHOD LAINNYA ======
     public void printInfo(Tanggal hariIni) {
         System.out.println("\n===== Data Dosen Tamu =====");
         System.out.println("NIDK          : " + nidk);
         System.out.println("Fakutlas      : " + fakultas);
+        System.out.print("Akhir Kontrak : ");
+        akhirKontrak.printTanggal();
         super.printInfo(hariIni);
     }
 }

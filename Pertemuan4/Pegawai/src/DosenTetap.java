@@ -1,3 +1,8 @@
+// Nama File    : DosenTetap.java
+// Deskripsi    : Berisi atribut dan method dalam class DosenTetap
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 12 Maret 2026
+
 public class DosenTetap extends Pegawai{
     // ====== ATRIBUT ======
     private String nidn;

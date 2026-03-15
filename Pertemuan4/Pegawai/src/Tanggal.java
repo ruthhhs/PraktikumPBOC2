@@ -1,3 +1,8 @@
+// Nama File    : Tanggal.java
+// Deskripsi    : Berisi atribut dan method dalam class Tanggal
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 12 Maret 2026
+
 public class Tanggal {
     // ====== ATRIBUT ======
     private Integer hari; 
@@ -43,6 +48,32 @@ public class Tanggal {
 
     // ====== METHOD LAINNYA ======
     public void printTanggal() {
-        System.out.println(hari + " " + bulan + " " + tahun);
+        System.out.print(hari);
+        if(bulan == 1){
+            System.out.print(" Januari ");
+        } else if (bulan == 2){
+            System.out.print(" Februari ");
+        } else if(bulan == 3){
+            System.out.print(" Maret ");
+        } else if(bulan == 4){
+            System.out.print(" April ");
+        } else if(bulan == 5){
+            System.out.print(" Mei ");
+        } else if(bulan == 6){
+            System.out.print(" Juni ");
+        } else if(bulan == 7){
+            System.out.print(" Juli ");
+        } else if(bulan == 8){
+            System.out.print(" Agustus ");
+        } else if(bulan == 9){
+            System.out.print(" September ");
+        } else if(bulan == 10){
+            System.out.print(" Oktober ");
+        } else if(bulan == 11){
+            System.out.print(" November ");
+        } else if(bulan == 12){
+            System.out.print(" Desember ");
+        }
+        System.out.println(tahun);
     }
 }

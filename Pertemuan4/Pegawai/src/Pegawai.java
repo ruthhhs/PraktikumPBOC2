@@ -1,3 +1,8 @@
+// Nama File    : Pegawai.java
+// Deskripsi    : Berisi atribut dan method dalam class Pegawai
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 12 Maret 2026
+
 public class Pegawai {
     // ====== ATRIBUT ======
     private String nip;
@@ -113,6 +118,10 @@ public class Pegawai {
         this.persenTunjang = persenTunjang;
     }
 
+    protected void setTunjangan (Double tunjangan) {
+        this.tunjangan = tunjangan;
+    }
+
     public void setBup(Integer bup) {
         this.bup = bup;
     }
@@ -135,9 +144,9 @@ public class Pegawai {
 
     public void hitungTunjangan(Tanggal hariIni){
         int masaKerja = hariIni.getTahun() - mulaiKerja.getTahun();
-        this.tunjangan = (persenTunjang *
-                            masaKerja *
-                            gajiPokok / 100);
+        setTunjangan(persenTunjang *
+                        masaKerja *
+                        gajiPokok / 100);
     }
 
     // ====== METHOD LAINNYA ======
@@ -153,8 +162,10 @@ public class Pegawai {
         mulaiKerja.printTanggal();
         System.out.println("Jabatan       : " + jabatan);
         System.out.println("Masa Kerja    : " + hitungMasaKerja(hariIni));
-        System.out.print("Pensiun       : ");
-        hitungPensiun().printTanggal();
+        if (jabatan != "Dosen Tamu") {
+            System.out.print("Pensiun       : ");
+            hitungPensiun().printTanggal();
+        }
         System.out.println("Gaji Pokok    : Rp " + gajiPokok + ".0");
         hitungTunjangan(hariIni);
         System.out.println("Tunjangan     : Rp " + tunjangan);

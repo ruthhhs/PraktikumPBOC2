@@ -1,3 +1,8 @@
+// Nama File    : Tendik.java
+// Deskripsi    : Berisi atribut dan method dalam class Tendik
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 12 Maret 2026
+
 public class Tendik extends Pegawai{
     // ====== ATRIBUT ======
     private String bidang;
