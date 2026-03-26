@@ -23,4 +23,4 @@ java -cp bin {file-name}
 - Pertemuan2 : **package and visibility** with class `Titik` and `Garis`
 - Pertemuan3 : **asosiation, agregation, and composition** with class `Mahasiswa`, `Dosen`, `MataKuliah`, and `Kendaraan`
 - Pertemuan4 : **inheritance** with class `BangunDatar`, `Persegi`, and `Lingkaran`; also more assigment with class `Pegawai`, `DosenTetap`, `DosenTamu`, and `Tendik`
-- Pertemuan5 : **abstraction** and **interface** with class `BangunDatar`, `Persegi`, `Lingkaran`, and `Iresize`
+- Pertemuan5 : **abstraction** and **interface** with class `BangunDatar` and assigment with class `Pegawai`

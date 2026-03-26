@@ -1,3 +1,4 @@
+
 public interface Iresize {
     public void zoomIn();
     public void zoomOut();

@@ -1,7 +1,4 @@
-// Nama File    : BangunDatar.java
-// Deskripsi    : Berisi atribut dan method dalam class BangunDatar
-// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
-// Tanggal      : 26+ Maret 2026
+
 
 public abstract class BangunDatar {
     // ====== ATRIBUT ======
