@@ -1,4 +1,7 @@
-
+// Nama File    : Lingkaran.java
+// Deskripsi    : Berisi atribut dan method dalam class Lingkaran
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 18 Maret 2026
 
 public class Lingkaran extends BangunDatar implements Iresize {
     // ====== ATRIBUT ======
