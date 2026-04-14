@@ -1,4 +1,7 @@
-
+// Nama File    : MBangunDatar.java
+// Deskripsi    : Driver yang menjalankan class BangunDatar, Persegi, dan Lingkaran
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 18 Maret 2026
 
 public class MBangunDatar {
     public static void main(String[] args){
