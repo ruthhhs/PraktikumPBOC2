@@ -25,6 +25,10 @@ java -cp bin {file-name}
 - Pertemuan4 : **inheritance** with class `BangunDatar`, `Persegi`, and `Lingkaran`; also more assigment with class `Pegawai`, `DosenTetap`, `DosenTamu`, and `Tendik`
 - Pertemuan5 : **abstraction** and **interface** with class `BangunDatar` and assigment with class `Manusia`
 - Pertemuan6 : **asertion** and **ekseption**, ran the asertion with:
-```
-java -enableassertions -cp bin {file-name}
-```
+    ```
+    java -enableassertions -cp bin {file-name}
+    ```
+- Pertemuan7 : **polimorphisme** with child folders:
+    - **coercion**
+    - **overloading** : with class `Mahasiswa`
+    - **inclusion** : with class `Anabul`, `Kucing`, `Anjing`, and `Burung`
