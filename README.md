@@ -36,3 +36,4 @@ java -cp bin {file-name}
     - `coercion`
     - `overloading` : with class **Mahasiswa**
     - `inclusion` : with class **Anabul**, **Kucing**, **Anjing**, and **Burung**
+    - **CivitasAdemika**
