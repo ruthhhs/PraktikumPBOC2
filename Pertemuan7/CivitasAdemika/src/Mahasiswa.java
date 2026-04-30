@@ -16,7 +16,7 @@ public class Mahasiswa extends CivitasAkademika {
 
     // ====== METHOD SELEKTOR ======
     @Override
-    // dosen memiliki atribut nomor nim
+    // mahasiswa memiliki atribut nomor nim
     public String getNomor(){
         return nim;
     }
