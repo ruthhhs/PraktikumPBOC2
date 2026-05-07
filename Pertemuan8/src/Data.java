@@ -15,8 +15,16 @@ public class Data<T> {
     }
 
     // ==== METHOD SELEKTOR ====
-    public T getIsi(int posisi){
-        return ruang[posisi - 1];
+    // public T getIsi(int posisi){
+    //     return ruang[posisi - 1];
+    // }
+
+    public String getIsi(int posisi){
+        if(ruang[posisi - 1] instanceof Anabul){
+            Anabul a = (Anabul) ruang[posisi - 1];
+            return a.getNama();
+        }
+        return (String) ruang[posisi - 1];
     }
 
     public int getSize(){

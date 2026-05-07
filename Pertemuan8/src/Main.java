@@ -46,8 +46,8 @@ public class Main {
         System.out.println("===== LARIK GENERIK =====\n");
 
         // a.
-        System.out.println("a) Aplikasi Kelas Data\n");
-        
+        System.out.println("a) Aplikasi Kelas Data Nama\n");
+
         Data<String> dataNama = new Data<>(new String[0]);
         dataNama.setIsi(1, "Coco");
         dataNama.setIsi(2, "Agot");
@@ -61,5 +61,36 @@ public class Main {
         System.out.println("Isi elm ke-5: " + dataNama.getIsi(5));
         System.out.println("\nBanyak elm efektif: " + dataNama.getSize());
 
+        // b.
+        System.out.println("\nb) Aplikasi setIsi Kelas Data Anabul\n");
+
+        // baut anabul baruuu
+        Anabul a1 = new Anjing("Cookie");
+        Anabul a2 = new Kucing("Mochi", 4.0);
+        Anabul a3 = new Anggora("Gora", 3.6);
+        Anabul a4 = new KembangTelon("Telon", 3.3);
+
+        // buar array anabul
+        Data<Anabul> dataAnabul = new Data<>(new Anabul[0]);
+        dataAnabul.setIsi(1, a1);
+        dataAnabul.setIsi(2, a2);
+        dataAnabul.setIsi(4, a3);
+        dataAnabul.setIsi(5, a4);
+
+        // c.
+        System.out.println("\nc) Aplikasi getIsi Kelas Data Anabul\n");
+
+        System.out.println("Isi elm ke-1: " + dataAnabul.getIsi(1));
+        System.out.println("Isi elm ke-2: " + dataAnabul.getIsi(2));
+        System.out.println("Isi elm ke-3: " + dataAnabul.getIsi(3));
+        System.out.println("Isi elm ke-4: " + dataAnabul.getIsi(4));
+        System.out.println("Isi elm ke-5: " + dataAnabul.getIsi(5));
+
+        // d.
+        System.out.println("\nd) Aplikasi getsize Kelas Data Anabul\n");
+
+        System.out.println("Banyak elm efektif: " + dataNama.getSize());
+
+        System.out.println();
     }
 }
