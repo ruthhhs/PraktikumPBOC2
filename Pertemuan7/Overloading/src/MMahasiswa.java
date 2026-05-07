@@ -1,3 +1,8 @@
+// Nama File    : MMAhasiswa.java
+// Deskripsi    : Driver yang menjalankan Mahasiswa
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 23 April 2026
+
 public class MMahasiswa {
     public static void main(String[] args) {
         Mahasiswa M1 = new Mahasiswa();

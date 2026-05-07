@@ -1,3 +1,8 @@
+// Nama File    : Mahasiswa.java
+// Deskripsi    : Berisi atribut dan method dalam class Mahasiswa
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 23 April 2026
+
 public class Mahasiswa {
     // ====== ATRIBUT ======
     private String nim;

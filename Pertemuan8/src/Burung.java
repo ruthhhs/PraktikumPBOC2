@@ -1,7 +1,7 @@
 // Nama File    : Burung.java
 // Deskripsi    : Berisi atribut dan method dalam class Burung
 // Pembuat      : Ruth Septriana Sipangkar / 24060124120024
-// Tanggal      : 23 April 2026
+// Tanggal      : 30 April 2026
 
 public class Burung extends Anabul {
     // ==== METHOD KONSTRUKTOR ====
@@ -15,10 +15,10 @@ public class Burung extends Anabul {
 
     // ==== METHOD LAINNYA ====
     void gerak(){
-        System.out.println("Burung " + nama + " terbang.");
+        System.out.println("Burung: " + nama + " terbang.");
     }
 
     void suara(){
-        System.out.println("Burung " + nama + " berciut.");
+        System.out.println("Burung: " + nama + " berciut.");
     }
 }

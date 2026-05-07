@@ -37,3 +37,4 @@ java -cp bin {file-name}
     - `overloading` : with class **Mahasiswa**
     - `inclusion` : with class **Anabul**, **Kucing**, **Anjing**, and **Burung**
     - **CivitasAdemika**
+- Pertemuan8 : `generic` using **data** and **datum**

@@ -1,3 +1,8 @@
+// Nama File    : CivitasAkademika.java
+// Deskripsi    : Berisi atribut dan method dalam class CivitasAkademika
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 23 April 2026
+
 public abstract class CivitasAkademika {
     // ====== ATRIBUT ======
     private String nama;

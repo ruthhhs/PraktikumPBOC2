@@ -1,3 +1,8 @@
+// Nama File    : coercionMain.java
+// Deskripsi    : Driver yang menjalankan coercion
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 23 April 2026
+
 public class coercionMain {
     public static void main(String[] args) {
         // char ke integer

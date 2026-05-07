@@ -1,7 +1,7 @@
 // Nama File    : Anabul.java
 // Deskripsi    : Berisi atribut dan method dalam class Anabul
 // Pembuat      : Ruth Septriana Sipangkar / 24060124120024
-// Tanggal      : 23 April 2026
+// Tanggal      : 30 April 2026
 
 public class Anabul {
     // ==== ATRIBUT ====
@@ -28,10 +28,10 @@ public class Anabul {
 
     // ==== METHOD LAINNYA ====
     void gerak(){
-        System.out.println("Anabul " + nama + " bergerak.");
+        System.out.println("Anabul: " + nama + " bergerak.");
     }
 
     void suara(){
-        System.out.println("Anabul " + nama + " bersuara.");
+        System.out.println("Anabul: " + nama + " bersuara.");
     }
 }

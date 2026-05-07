@@ -1,3 +1,8 @@
+// Nama File    : Dosen.java
+// Deskripsi    : Berisi atribut dan method dalam class Dosen
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 23 April 2026
+
 public class Dosen extends CivitasAkademika {
     // ====== ATRIBUT ======
     private String nip;

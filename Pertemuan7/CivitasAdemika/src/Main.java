@@ -1,3 +1,8 @@
+// Nama File    : Main.java
+// Deskripsi    : Driver yang menjalankan CivitasAkademika
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 23 April 2026
+
 public class Main {
     public static void main(String[] args) {
         // membuat 2 dosen, 5 mahasiswa

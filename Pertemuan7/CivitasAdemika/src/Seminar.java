@@ -1,3 +1,8 @@
+// Nama File    : Seminar.java
+// Deskripsi    : Berisi atribut dan method dalam class Seminar
+// Pembuat      : Ruth Septriana Sipangkar / 24060124120024
+// Tanggal      : 23 April 2026
+
 public class Seminar {
     // ====== ATRIBUT ======
     private String namaSeminar;
