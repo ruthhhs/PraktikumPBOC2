@@ -38,3 +38,6 @@ java -cp bin {file-name}
     - `inclusion` : with class **Anabul**, **Kucing**, **Anjing**, and **Burung**
     - **CivitasAdemika**
 - Pertemuan8 : `generic` using **data** and **datum**
+- Pertemuan9 : `collection` with child folders:
+    - Koleksi-kelas-dasar
+    - Koleksi-kelas-bentukan
