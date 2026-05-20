@@ -41,3 +41,4 @@ java -cp bin {file-name}
 - Pertemuan9 : `collection` with child folders:
     - Koleksi-kelas-dasar
     - Koleksi-kelas-bentukan
+- Pertemuan10 : Connect to Database using *NetBeans* as IDE and *Workbench* as the database server
