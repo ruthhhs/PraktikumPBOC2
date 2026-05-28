@@ -42,3 +42,4 @@ java -cp bin {file-name}
     - Koleksi-kelas-dasar
     - Koleksi-kelas-bentukan
 - Pertemuan10 : Connect to Database using *NetBeans* as IDE and *Workbench* as the database server
+- Pertemuan11 : Creating simple GUI in *NetBeans*
